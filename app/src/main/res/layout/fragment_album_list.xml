@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Base.Widget.AppCompat.Spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/select_screen"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/spinner"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_screen"
+        android:text="@string/go_to_select_screen"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artistname_required"
+            android:imeOptions="actionUnspecified"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/trackname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:hint="@string/trackname_required"
+            android:imeOptions="actionUnspecified"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/collectionname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trackname"
+            android:hint="@string/collectionname_optional"
+            android:imeOptions="actionUnspecified"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/collectionprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collectionname"
+            android:hint="@string/collectionprice_optional"
+            android:imeOptions="actionUnspecified"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/collectionrelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collectionprice"
+            android:hint="@string/releasedate_optional"
+            android:imeOptions="actionUnspecified"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collectionrelease"
+            android:layout_marginTop="20dp"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

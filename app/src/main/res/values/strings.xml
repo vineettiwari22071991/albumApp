@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AlbumApp</string>
+    <string name="todo">TODO</string>
+    <string name="trackname_required">TrackName(Required)</string>
+    <string name="collectionname_optional">Collectionname(Optional)</string>
+    <string name="collectionprice_optional">Collectionprice(Optional)</string>
+    <string name="releasedate_optional">Releasedate(Optional)</string>
+    <string name="submit">Submit</string>
+    <string name="go_to_select_screen">Go To Select Screen</string>
+    <string name="artistname_required">ArtistName(Required)</string>
+
+
+    <string-array name="filter_by">
+        <item>Collection Name</item>
+        <item>Track Name</item>
+        <item>Artist Name</item>
+        <item>Collection Price</item>
+    </string-array>
+</resources>
